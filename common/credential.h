@@ -54,6 +54,6 @@
 - (OSStatus)update:(NSString *)username password:(NSString *)password;
 @end
 
-@interface NSURL (ZKKeychain)
+@interface NSURL (Keychain)
 - (SecProtocolType)SecProtocolType;
 @end
