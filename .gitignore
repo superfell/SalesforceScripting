@@ -1,8 +1,6 @@
 .DS_Store
 build
 .svn
-dsa_pub.pem
-
 *.mode1v3
 *.pbxuser
 xcuserdata
