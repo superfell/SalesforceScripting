@@ -1,4 +1,4 @@
-// Copyright (c) 2010 Simon Fell
+// Copyright (c) 2010-2011 Simon Fell
 //
 // Permission is hereby granted, free of charge, to any person obtaining a 
 // copy of this software and associated documentation files (the "Software"), 
@@ -40,20 +40,24 @@
 	return @"sr";
 }
 
+-(NSString *)defaultIfNil:(NSString *)val {
+	return val == nil ? @"" : val;
+}
+
 -(NSString *)Id {
-	return [res id];
+	return [self defaultIfNil:[res id]];
 }
 
 -(NSString *)statusCode {
-	return [res statusCode];
+	return [self defaultIfNil:[res statusCode]];
 }
 
 -(NSString *)message {
-	return [res message];
+	return [self defaultIfNil:[res message]];
 }
 
--(BOOL)success {
-	return [res success];
+-(NSNumber *)success {
+	return [NSNumber numberWithBool:[res success]];
 }
 
 @end
