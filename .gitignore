@@ -5,3 +5,5 @@ dsa_pub.pem
 
 *.mode1v3
 *.pbxuser
+xcuserdata
+project.xcworkspace
