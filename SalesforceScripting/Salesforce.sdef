@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Standard Terminology">
+	<suite name="Standard Suite" code="????" description="Common classes and commands for most applications.">
+		<cocoa name="NSCoreSuite"/>
+		<command name="count" code="corecnte" description="Return the number of elements of a particular class within an object.">
+			<cocoa class="NSCountCommand"/>
+			<direct-parameter description="the object whose elements are to be counted" type="specifier"/>
+			<parameter name="each" code="kocl" description="The class of objects to be counted." type="type" optional="yes">
+				<cocoa key="ObjectClass"/>
+			</parameter>
+			<result description="the number of elements" type="integer"/>
+		</command>
+		<command name="delete" code="coredelo" description="Delete an object.">
+			<cocoa class="NSDeleteCommand"/>
+			<direct-parameter description="the object to delete" type="specifier"/>
+		</command>
+		<command name="exists" code="coredoex" description="Verify if an object exists.">
+			<cocoa class="NSExistsCommand"/>
+			<direct-parameter description="the object in question" type="specifier"/>
+			<result description="true if it exists, false if not" type="boolean"/>
+		</command>
+		<command name="make" code="corecrel" description="Make a new object.">
+			<cocoa name="Create" class="NSCreateCommand"/>
+			<parameter name="new" code="kocl" description="The class of the new object." type="type">
+				<cocoa key="ObjectClass"/>
+			</parameter>
+			<parameter name="at" code="insh" description="The location at which to insert the object." type="location specifier" optional="yes">
+				<cocoa key="Location"/>
+			</parameter>
+			<parameter name="with data" code="data" description="The initial data for the object." type="any" optional="yes">
+				<cocoa key="ObjectData"/>
+			</parameter>
+			<parameter name="with properties" code="prdt" description="The initial values for properties of the object." type="record" optional="yes">
+				<cocoa key="KeyDictionary"/>
+			</parameter>
+			<result description="to the new object" type="specifier"/>
+		</command>
+	</suite>
+	<suite name="Salesforce Scripting Suite" code="sfDc" description="Classes and commands for interacting with the salesforce.com web services API.">
+		<class name="application" code="capp" description="An application&apos;s top level scripting object.">
+			<cocoa class="NSApplication"/>
+			<element description="User Sessions" type="UserSession" access="r">
+				<cocoa key="sessions"/>
+			</element>
+			<element description="SObjects" type="SObject">
+				<cocoa key="sobjects"/>
+			</element>
+			<property name="name" code="pnam" description="The name of the application." type="text" access="r"/>
+			<property name="frontmost" code="pisf" description="Is this the frontmost (active) application?" type="boolean" access="r">
+				<cocoa key="isActive"/>
+			</property>
+			<property name="version" code="vers" description="The version of the application." type="text" access="r"/>
+		</class>
+		<class name="UserSession" code="usSN" description="A session with the API for a particular user." plural="sessions">
+			<cocoa class="UserSession"/>
+			<element description="The Query Results for this session" type="QueryResult" access="r">
+				<cocoa key="queryResults"/>
+			</element>
+			<element description="The SaveResults for this session" type="SaveResult">
+				<cocoa key="saveResults"/>
+			</element>
+			<element description="The UserInfo" type="UserInfo" access="r">
+				<cocoa key="userInfos"/>
+			</element>
+			<element type="SObjectDescribe">
+				<cocoa key="objectDescribes"/>
+			</element>
+			<property name="appleId" code="ID  " description="The AppleScript unique ID for this object instance" type="text" access="r">
+				<cocoa key="uniqueId"/>
+			</property>
+			<property name="serverUrl" code="sUrl" description="The Server URL we&apos;re currently connected to" type="text" access="r">
+				<cocoa key="serverUrl"/>
+			</property>
+			<property name="sessionId" code="ssId" description="The API session Id currently being used" type="text" access="r">
+				<cocoa key="sessionId"/>
+			</property>
+			<property name="users info" code="inFo" description="Details about the user." type="UserInfo" access="r">
+				<cocoa key="userInfo"/>
+			</property>
+			<responds-to command="query">
+				<cocoa method="query:"/>
+			</responds-to>
+			<responds-to command="create">
+				<cocoa method="create:"/>
+			</responds-to>
+			<responds-to command="update">
+				<cocoa method="update:"/>
+			</responds-to>
+			<responds-to command="deleteRecords">
+				<cocoa method="delete:"/>
+			</responds-to>
+			<responds-to command="queryMore">
+				<cocoa method="queryMore:"/>
+			</responds-to>
+		</class>
+		<class name="QueryResult" code="qrRs" description="The results of executing a SOQL query" plural="QueryResults">
+			<cocoa class="QueryResult"/>
+			<element description="The records in this query result" type="SObject" access="r">
+				<cocoa key="records"/>
+			</element>
+			<property name="size" code="sIze" description="The total size of the query result (not just this batch)" type="integer" access="r">
+				<cocoa key="size"/>
+			</property>
+			<property name="done" code="DoNe" description="Is this the last batch of results for this query" type="boolean" access="r">
+				<cocoa key="done"/>
+			</property>
+			<property name="queryLocator" code="qLoc" description="The query locator for the next batch of records in this result" type="text" access="r">
+				<cocoa key="queryLocator"/>
+			</property>
+			<property name="appleId" code="ID  " description="The AppleScript unique ID for this object instance" type="text">
+				<cocoa key="uniqueId"/>
+			</property>
+		</class>
+		<class name="SObject" code="sObj" description="A single SObject instance (aka row of data)" plural="SObjects">
+			<cocoa class="SObject"/>
+			<element description="Any related SObjects" type="SObject" access="r">
+				<cocoa key="children"/>
+			</element>
+			<property name="Id" code="sfId" description="The Salesforce.com Id for this row" type="text">
+				<cocoa key="Id"/>
+			</property>
+			<property name="appleId" code="ID  " description="The AppleScript unique ID for this object instance" type="text" access="r">
+				<cocoa key="uniqueId"/>
+			</property>
+			<property name="type" code="sTYP" description="The Type of this SObject (e.g. Account, Case, CustomObject__C)" type="text">
+				<cocoa key="type"/>
+			</property>
+			<property name="fields" code="Flds" description="The list of fields that have values" access="r">
+				<cocoa key="fields"/>
+				<type type="text" list="yes"/>
+			</property>
+			<responds-to command="value">
+				<cocoa method="value:"/>
+			</responds-to>
+			<responds-to command="dateValue">
+				<cocoa method="dateValue:"/>
+			</responds-to>
+			<responds-to command="numberValue">
+				<cocoa method="numberValue:"/>
+			</responds-to>
+			<responds-to command="sobjectValue">
+				<cocoa method="sobjectValue:"/>
+			</responds-to>
+			<responds-to command="setField">
+				<cocoa method="setValue:"/>
+			</responds-to>
+			<responds-to command="setToNull">
+				<cocoa method="setToNull:"/>
+			</responds-to>
+		</class>
+		<class name="SaveResult" code="svRs" description="The result of an create/update/delete operation" plural="SaveResults">
+			<cocoa class="SaveResult"/>
+			<property name="Id" code="sfId" description="Salesforce.com Record Id" type="text">
+				<cocoa key="Id"/>
+			</property>
+			<property name="appleId" code="ID  " description="The AppleScript identifier" type="text">
+				<cocoa key="uniqueId"/>
+			</property>
+			<property name="StatusCode" code="staT" description="status code" type="text">
+				<cocoa key="statusCode"/>
+			</property>
+			<property name="message" code="eMsg" description="The error message" type="text" access="r">
+				<cocoa key="message"/>
+			</property>
+			<property name="success" code="sUcc" description="Success" type="boolean">
+				<cocoa key="success"/>
+			</property>
+		</class>
+		<class name="UserInfo" code="usNf" description="Information about the user of the session">
+			<cocoa class="UserInfo"/>
+			<property name="appleId" code="ID  " description="The AppleScript identifier" type="text" access="r">
+				<cocoa key="uniqueId"/>
+			</property>
+			<property name="username" code="name" description="The user&apos;s username (e.g. fred@sample.com)" type="text" access="r">
+				<cocoa key="userName"/>
+			</property>
+			<property name="accessibilityMode" code="AccM" description="Accessibility Mode" type="boolean" access="r">
+				<cocoa key="accessibilityMode"/>
+			</property>
+			<property name="currencySymbol" code="curS" description="Currency Symbol" type="text" access="r">
+				<cocoa key="currencySymbol"/>
+			</property>
+			<property name="organizationId" code="orgI" description="Organization Id" type="text" access="r">
+				<cocoa key="organizationId"/>
+			</property>
+			<property name="organizationName" code="orgN" description="Organization Name" type="text" access="r">
+				<cocoa key="organizationName"/>
+			</property>
+			<property name="organizationIsMultiCurrency" code="ogMC" description="Organization has multiple currencies" type="boolean" access="r">
+				<cocoa key="organizationIsMultiCurrency"/>
+			</property>
+			<property name="defaultCurrencyIsoCode" code="deCC" description="Default currency code (ISO Format)" type="text" access="r">
+				<cocoa key="defaultCurrencyIsoCode"/>
+			</property>
+			<property name="email" code="Mail" description="Users Email address" type="text" access="r">
+				<cocoa key="email"/>
+			</property>
+			<property name="fullName" code="uNme" description="Users full name" type="text" access="r">
+				<cocoa key="fullName"/>
+			</property>
+			<property name="userId" code="usId" description="User&apos;s ID" type="text" access="r">
+				<cocoa key="userId"/>
+			</property>
+			<property name="language" code="Lang" description="Users Language" type="text">
+				<cocoa key="language"/>
+			</property>
+			<property name="locale" code="Locl" description="Users Locale" type="text" access="r">
+				<cocoa key="locale"/>
+			</property>
+			<property name="timeZone" code="TmZn" description="Users Time Zone" type="text" access="r">
+				<cocoa key="timeZone"/>
+			</property>
+			<property name="licenseType" code="LicT" description="Users License Type" type="type" access="r">
+				<cocoa key="licenseType"/>
+			</property>
+			<property name="profileId" code="PrId" description="Users Profile Id" type="text" access="r">
+				<cocoa key="profileId"/>
+			</property>
+			<property name="roleId" code="Role" description="Users RoleId" type="text" access="r">
+				<cocoa key="roleId"/>
+			</property>
+		</class>
+		<class name="SObjectDescribe" code="sDsc" description="Metadata about an SObject">
+			<cocoa class="SObjectDescribe"/>
+			<element type="FieldDescribe" access="r">
+				<cocoa key="fields"/>
+			</element>
+			<property name="activateable" code="acTv" type="boolean" access="r"/>
+			<property name="creatable" code="Crte" type="boolean" access="r"/>
+			<property name="custom" code="C__c" type="boolean" access="r"/>
+			<property name="customSetting" code="csSt" type="boolean" access="r"/>
+			<property name="deleteable" code="delE" type="boolean" access="r"/>
+			<property name="deprecatedAndHidden" code="depH" type="boolean" access="r"/>
+			<property name="layoutable" code="LayO" type="boolean" access="r"/>
+			<property name="mergeable" code="Merg" type="boolean" access="r"/>
+			<property name="queryable" code="Qury" type="boolean" access="r"/>
+			<property name="replicatable" code="Repl" type="boolean" access="r"/>
+			<property name="retrieveable" code="Retr" type="boolean" access="r"/>
+			<property name="Searchable" code="Srch" type="boolean" access="r"/>
+			<property name="triggerable" code="Trgg" type="boolean" access="r"/>
+			<property name="undeleteable" code="Undl" type="boolean" access="r"/>
+			<property name="updateable" code="Updt" type="boolean" access="r"/>
+			<property name="keyPrefix" code="keyP" type="text" access="r"/>
+			<property name="label" code="LblS" type="text" access="r"/>
+			<property name="labelPlural" code="LblP" type="text" access="r"/>
+			<property name="name" code="pnam" type="text" access="r">
+				<cocoa key="name"/>
+			</property>
+			<property name="appleId" code="ID  " description="The AppleScript identifier" type="text" access="r">
+				<cocoa key="uniqueId"/>
+			</property>
+			<property name="urlDetail" code="urlD" type="text" access="r"/>
+			<property name="urlEdit" code="urlE" type="text" access="r"/>
+			<property name="urlNew" code="urlN" type="text" access="r"/>
+		</class>
+		<class name="FieldDescribe" code="fDsc" description="Metadata for a specific field">
+			<cocoa class="FieldDescribe"/>
+			<property name="autoNumber" code="autN" type="boolean" access="r"/>
+			<property name="byteLength" code="bLen" type="integer" access="r"/>
+			<property name="calculated" code="Calc" type="boolean" access="r"/>
+			<property name="controllerName" code="cNme" type="text" access="r"/>
+			<property name="createable" code="Crte" type="boolean" access="r"/>
+			<property name="custom" code="C__c" type="boolean" access="r"/>
+			<property name="defaultOnCreate" code="defC" type="boolean" access="r"/>
+			<property name="dependentPicklist" code="dpPL" type="boolean" access="r"/>
+			<property name="digits" code="digT" type="integer" access="r"/>
+			<property name="externalId" code="extI" type="boolean" access="r"/>
+			<property name="filterable" code="filT" type="boolean" access="r"/>
+			<property name="htmlFormatted" code="htmL" type="boolean" access="r"/>
+			<property name="label" code="LblS" type="text" access="r"/>
+			<property name="length" code="LenG" type="integer" access="r"/>
+			<property name="name" code="pnam" type="text" access="r"/>
+			<property name="nameField" code="namF" type="boolean" access="r"/>
+			<property name="nillable" code="nilL" type="boolean" access="r"/>
+			<property name="precision" code="preC" type="integer" access="r"/>
+			<property name="referenceTo" code="refT">
+				<type type="FieldDescribe" list="yes"/>
+			</property>
+			<property name="relationshipName" code="relN" type="text" access="r"/>
+			<property name="restrictedPicklist" code="rsPL" type="boolean" access="r"/>
+			<property name="scale" code="sclE" type="integer" access="r"/>
+			<property name="soapType" code="soaT" type="text" access="r"/>
+			<property name="type" code="tyPE" type="text" access="r"/>
+			<property name="updateable" code="Updt" type="boolean" access="r"/>
+			<property name="calculatedFormula" code="cFor" type="text" access="r"/>
+			<property name="caseSensitive" code="cSen" type="boolean" access="r"/>
+			<property name="defaultValueFormula" code="dFor" type="text" access="r"/>
+			<property name="namePointing" code="nPnt" type="boolean" access="r"/>
+			<property name="sortable" code="sorT" type="boolean" access="r"/>
+			<property name="unique" code="uniQ" type="boolean" access="r"/>
+			<property name="idLookup" code="idLK" type="boolean" access="r"/>
+			<property name="relationshipOrder" code="relO" type="integer" access="r"/>
+			<property name="writeRequiresMasterRead" code="wrmR" type="boolean" access="r"/>
+			<property name="inlineHelpText" code="helP" type="text" access="r"/>
+			<property name="groupable" code="groP" type="boolean" access="r"/>
+			<property name="appleId" code="ID  " type="text" access="r">
+				<cocoa key="uniqueId"/>
+			</property>
+		</class>
+		<command name="login" code="loginunp" description="Login to Salesforce.com with a Username and Password">
+			<cocoa class="LoginScriptCommand"/>
+			<parameter name="username" code="un  " description="The username" type="text">
+				<cocoa key="username"/>
+			</parameter>
+			<parameter name="password" code="pass" description="The users password (and possibly security token)" type="text">
+				<cocoa key="password"/>
+			</parameter>
+			<result description="The resulting UserSession" type="UserSession"/>
+		</command>
+		<command name="query" code="excQuery" description="Executes a SOQL query">
+			<direct-parameter type="UserSession"/>
+			<parameter name="soql" code="Soql" description="The SOQL to execute" type="text">
+				<cocoa key="soql"/>
+			</parameter>
+			<result type="QueryResult"/>
+		</command>
+		<command name="value" code="ValueOf " description="Get the value of a particular field.">
+			<direct-parameter type="SObject"/>
+			<parameter name="of" code="oF  " description="Field name to get value of" type="text">
+				<cocoa key="fieldName"/>
+			</parameter>
+			<result type="text"/>
+		</command>
+		<command name="dateValue" code="ValueOfD" description="Get the value of a particular field as a date/time">
+			<direct-parameter type="SObject"/>
+			<parameter name="of" code="oF  " description="The name of the field to get the value of" type="text">
+				<cocoa key="fieldName"/>
+			</parameter>
+			<result type="date"/>
+		</command>
+		<command name="numberValue" code="ValueOfN" description="Get a numerical field value">
+			<direct-parameter type="SObject"/>
+			<parameter name="of" code="oF  " description="The name of the field to get the value of" type="text">
+				<cocoa key="fieldName"/>
+			</parameter>
+			<result type="number"/>
+		</command>
+		<command name="sobjectValue" code="ValueOfS" description="get a related objects SObject">
+			<direct-parameter type="SObject"/>
+			<parameter name="of" code="oF  " description="the name of the relationship to the other sobject" type="text">
+				<cocoa key="fieldName"/>
+			</parameter>
+			<result type="SObject"/>
+		</command>
+		<command name="setField" code="setField" description="Updates the field to this value">
+			<direct-parameter type="SObject"/>
+			<parameter name="to" code="VAlu" description="The new value for this field">
+				<cocoa key="value"/>
+				<type type="text"/>
+				<type type="boolean"/>
+				<type type="date"/>
+				<type type="number"/>
+				<type type="real"/>
+			</parameter>
+			<parameter name="named" code="FEld" description="The name of the field to update" type="text">
+				<cocoa key="fieldName"/>
+			</parameter>
+			<parameter name="dateOnly" code="dtOn" description="Pass true for this when setting a date only field" type="boolean" optional="yes">
+				<cocoa key="dateOnly"/>
+			</parameter>
+		</command>
+		<command name="setToNull" code="set2Null" description="Sets the named field to the explict null value">
+			<direct-parameter type="SObject"/>
+			<parameter name="field" code="Feld" description="the name of the field to set to null" type="text">
+				<cocoa key="fieldName"/>
+			</parameter>
+		</command>
+		<command name="create" code="creatSob" description="Create one or more SObject in salesforce.com">
+			<direct-parameter type="UserSession"/>
+			<parameter name="sobjects" code="Sobj" description="The list of SObjects to create">
+				<cocoa key="sobjects"/>
+				<type type="SObject" list="yes"/>
+			</parameter>
+			<result>
+				<type type="SaveResult" list="yes"/>
+			</result>
+		</command>
+		<command name="update" code="updatSob" description="Update one or more SObject in salesforce.com">
+			<direct-parameter type="UserSession"/>
+			<parameter name="sobjects" code="Sobj" description="The list of SObjects to create">
+				<cocoa key="sobjects"/>
+				<type type="SObject" list="yes"/>
+			</parameter>
+			<result>
+				<type type="SaveResult" list="yes"/>
+			</result>
+		</command>
+		<command name="deleteRecords" code="deletSob" description="Deletes one or more rows from Salesforce.com">
+			<direct-parameter type="UserSession"/>
+			<parameter name="ids" code="lids" description="The list of record Ids to delete">
+				<cocoa key="Ids"/>
+				<type type="text" list="yes"/>
+			</parameter>
+			<result>
+				<type type="SaveResult" list="yes"/>
+			</result>
+		</command>
+		<command name="show login window" code="loginWnd" description="Show the Login dialog window to the user and wait for then to login. (if the user cancels the dialog, missing reference is returned)">
+			<cocoa class="LoginWindowScriptCommand"/>
+			<result description="The resulting UserSession" type="UserSession"/>
+		</command>
+		<command name="login with saved credentials" code="loginKEY" description="Attempts a login using the last used credentials, if the login fails, the user will be prompted to login with the regular login window dialog">
+			<cocoa class="LoginAutoScriptCommand"/>
+			<result description="The resulting API session for the user." type="UserSession"/>
+		</command>
+		<command name="queryMore" code="QueryMor" description="Fetches the next batch of results for this query.">
+			<direct-parameter type="UserSession"/>
+			<parameter name="locator" code="Loct" description="The queryLocator from the previous batch, or the previous QueryResult object">
+				<cocoa key="locator"/>
+				<type type="text"/>
+				<type type="QueryResult"/>
+			</parameter>
+			<result type="QueryResult"/>
+		</command>
+	</suite>
+</dictionary>

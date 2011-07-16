@@ -1,0 +1,39 @@
+Todo
+====
+setValue with "" ends up as NSNumber ?
+icon
+picklist part of describe 
+search
+upsert
+
+Apple Script object tree window
+cleanup
+
+Done
+====
+v0.1
+create
+update
+sparkle
+
+v0.2
+delete
+getUserInfo
+error handling
+login window
+login with saved credentials
+
+v0.3
+updated to sparkle v1.5, fixed auto-update problems
+
+v0.4
+updated version of zkSforce
+queryMore
+describeGlobal
+
+v0.5
+explicit describeGlobal removed
+FieldDescribe added
+SObject handle Date only fields
+SObject expose fields collection
+API Call Log Window

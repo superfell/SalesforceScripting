@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* SalesforceScriptingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* SalesforceScriptingAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F41DF9E611B5B7D500567AB8 /* todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = F41DF9E511B5B7D500567AB8 /* todo.txt */; };
+		F41DFA2011B5BFFF00567AB8 /* SaveResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DFA1F11B5BFFF00567AB8 /* SaveResult.m */; };
+		F4258F8111B5E7BA00C39DD9 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = F4258F8011B5E7BA00C39DD9 /* Credits.html */; };
+		F42D337811B82C9C004A0B1D /* SObjectDescribe.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D337711B82C9C004A0B1D /* SObjectDescribe.m */; };
+		F49D8CF011B6FD85008FE502 /* ZKSoapException_AppleScript.m in Sources */ = {isa = PBXBuildFile; fileRef = F49D8CEF11B6FD85008FE502 /* ZKSoapException_AppleScript.m */; };
+		F49FE33311B6CD8F003F27F7 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F49FE33211B6CD8F003F27F7 /* UserInfo.m */; };
+		F4C0BF2711B719E200CBB9A8 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C0BF2611B719E200CBB9A8 /* Sparkle.framework */; };
+		F4C0BF3211B719EB00CBB9A8 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4C0BF2611B719E200CBB9A8 /* Sparkle.framework */; };
+		F4C0BF4211B71B0100CBB9A8 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = F4C0BF4111B71B0100CBB9A8 /* dsa_pub.pem */; };
+		F4C1442C11B74D55003AF176 /* zkParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1442B11B74D55003AF176 /* zkParser.m */; };
+		F4C1446211B74E7C003AF176 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C1446111B74E7C003AF176 /* libxml2.dylib */; };
+		F4C144F511B75CDD003AF176 /* zkParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1442B11B74D55003AF176 /* zkParser.m */; };
+		F4C144F611B75CDD003AF176 /* zkBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFBD11AAFCC700F8CD1E /* zkBaseClient.m */; };
+		F4C144F711B75CDD003AF176 /* zkChildRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF8A11AAFCAB00F8CD1E /* zkChildRelationship.m */; };
+		F4C144F811B75CDD003AF176 /* zkDescribeField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF8C11AAFCAB00F8CD1E /* zkDescribeField.m */; };
+		F4C144F911B75CDD003AF176 /* zkDescribeGlobalSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF8E11AAFCAB00F8CD1E /* zkDescribeGlobalSObject.m */; };
+		F4C144FA11B75CDD003AF176 /* zkDescribeSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9011AAFCAB00F8CD1E /* zkDescribeSObject.m */; };
+		F4C144FB11B75CDD003AF176 /* zkEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9211AAFCAB00F8CD1E /* zkEnvelope.m */; };
+		F4C144FC11B75CDD003AF176 /* zkLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9411AAFCAB00F8CD1E /* zkLoginResult.m */; };
+		F4C144FD11B75CDD003AF176 /* ZKPartnerEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9611AAFCAB00F8CD1E /* ZKPartnerEnvelope.m */; };
+		F4C144FE11B75CDD003AF176 /* ZKPicklistEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9811AAFCAB00F8CD1E /* ZKPicklistEntry.m */; };
+		F4C144FF11B75CDD003AF176 /* zkQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9A11AAFCAB00F8CD1E /* zkQueryResult.m */; };
+		F4C1450011B75CDD003AF176 /* ZKRecordTypeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9C11AAFCAB00F8CD1E /* ZKRecordTypeInfo.m */; };
+		F4C1450111B75CDD003AF176 /* zkSaveResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9E11AAFCAB00F8CD1E /* zkSaveResult.m */; };
+		F4C1450211B75CDD003AF176 /* zkSforceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA111AAFCAB00F8CD1E /* zkSforceClient.m */; };
+		F4C1450311B75CDD003AF176 /* zkSoapException.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA311AAFCAB00F8CD1E /* zkSoapException.m */; };
+		F4C1450411B75CDD003AF176 /* zkSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA511AAFCAB00F8CD1E /* zkSObject.m */; };
+		F4C1450511B75CDD003AF176 /* zkUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA711AAFCAB00F8CD1E /* zkUserInfo.m */; };
+		F4C1450611B75CDD003AF176 /* zkXmlDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA911AAFCAB00F8CD1E /* zkXmlDeserializer.m */; };
+		F4C1452711B75D45003AF176 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C1446111B74E7C003AF176 /* libxml2.dylib */; };
+		F4C1452E11B75D87003AF176 /* ZKSObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C144B811B756A6003AF176 /* ZKSObjectTest.m */; };
+		F4C1460D11B813E4003AF176 /* zkQueryResult_NSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1460C11B813E4003AF176 /* zkQueryResult_NSTableView.m */; };
+		F4C7AFAA11AAFCAB00F8CD1E /* zkChildRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF8A11AAFCAB00F8CD1E /* zkChildRelationship.m */; };
+		F4C7AFAB11AAFCAB00F8CD1E /* zkDescribeField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF8C11AAFCAB00F8CD1E /* zkDescribeField.m */; };
+		F4C7AFAC11AAFCAB00F8CD1E /* zkDescribeGlobalSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF8E11AAFCAB00F8CD1E /* zkDescribeGlobalSObject.m */; };
+		F4C7AFAD11AAFCAB00F8CD1E /* zkDescribeSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9011AAFCAB00F8CD1E /* zkDescribeSObject.m */; };
+		F4C7AFAE11AAFCAB00F8CD1E /* zkEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9211AAFCAB00F8CD1E /* zkEnvelope.m */; };
+		F4C7AFAF11AAFCAB00F8CD1E /* zkLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9411AAFCAB00F8CD1E /* zkLoginResult.m */; };
+		F4C7AFB011AAFCAB00F8CD1E /* ZKPartnerEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9611AAFCAB00F8CD1E /* ZKPartnerEnvelope.m */; };
+		F4C7AFB111AAFCAB00F8CD1E /* ZKPicklistEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9811AAFCAB00F8CD1E /* ZKPicklistEntry.m */; };
+		F4C7AFB211AAFCAB00F8CD1E /* zkQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9A11AAFCAB00F8CD1E /* zkQueryResult.m */; };
+		F4C7AFB311AAFCAB00F8CD1E /* ZKRecordTypeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9C11AAFCAB00F8CD1E /* ZKRecordTypeInfo.m */; };
+		F4C7AFB411AAFCAB00F8CD1E /* zkSaveResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AF9E11AAFCAB00F8CD1E /* zkSaveResult.m */; };
+		F4C7AFB511AAFCAB00F8CD1E /* zkSforceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA111AAFCAB00F8CD1E /* zkSforceClient.m */; };
+		F4C7AFB611AAFCAB00F8CD1E /* zkSoapException.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA311AAFCAB00F8CD1E /* zkSoapException.m */; };
+		F4C7AFB711AAFCAB00F8CD1E /* zkSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA511AAFCAB00F8CD1E /* zkSObject.m */; };
+		F4C7AFB811AAFCAB00F8CD1E /* zkUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA711AAFCAB00F8CD1E /* zkUserInfo.m */; };
+		F4C7AFB911AAFCAB00F8CD1E /* zkXmlDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFA911AAFCAB00F8CD1E /* zkXmlDeserializer.m */; };
+		F4C7AFBE11AAFCC700F8CD1E /* zkBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFBD11AAFCC700F8CD1E /* zkBaseClient.m */; };
+		F4C7AFC711AAFD3900F8CD1E /* credential.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFC311AAFD3900F8CD1E /* credential.m */; };
+		F4C7AFC811AAFD3900F8CD1E /* Login.nib in Resources */ = {isa = PBXBuildFile; fileRef = F4C7AFC411AAFD3900F8CD1E /* Login.nib */; };
+		F4C7AFC911AAFD3900F8CD1E /* ZKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7AFC611AAFD3900F8CD1E /* ZKLoginController.m */; };
+		F4C7AFCD11AAFD5A00F8CD1E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C7AFCC11AAFD5A00F8CD1E /* Security.framework */; };
+		F4C7B1AA11AB02E400F8CD1E /* Salesforce.sdef in Resources */ = {isa = PBXBuildFile; fileRef = F4C7B1A911AB02E400F8CD1E /* Salesforce.sdef */; };
+		F4C7B1AF11AB059E00F8CD1E /* UserSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7B1AE11AB059E00F8CD1E /* UserSession.m */; };
+		F4C7B1D011AB14C700F8CD1E /* LoginScriptCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7B1CF11AB14C700F8CD1E /* LoginScriptCommand.m */; };
+		F4C7B36111AB3E2D00F8CD1E /* QueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7B36011AB3E2D00F8CD1E /* QueryResult.m */; };
+		F4C7B36411AB3E3B00F8CD1E /* AppleScriptItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7B36311AB3E3B00F8CD1E /* AppleScriptItem.m */; };
+		F4C7B40F11ADA4E200F8CD1E /* SObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7B40E11ADA4E200F8CD1E /* SObject.m */; };
+		F4FCB4E711B98435002557D9 /* FieldDescribe.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FCB4E611B98435002557D9 /* FieldDescribe.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4258FA711B5E86A00C39DD9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4C0BF3211B719EB00CBB9A8 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* SalesforceScriptingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesforceScriptingAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* SalesforceScriptingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesforceScriptingAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* SalesforceScripting_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesforceScripting_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* SalesforceScripting-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SalesforceScripting-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* SalesforceScripting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesforceScripting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41DF9E511B5B7D500567AB8 /* todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
+		F41DFA1E11B5BFFF00567AB8 /* SaveResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveResult.h; sourceTree = "<group>"; };
+		F41DFA1F11B5BFFF00567AB8 /* SaveResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveResult.m; sourceTree = "<group>"; };
+		F4258F8011B5E7BA00C39DD9 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		F42D337611B82C9C004A0B1D /* SObjectDescribe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SObjectDescribe.h; sourceTree = "<group>"; };
+		F42D337711B82C9C004A0B1D /* SObjectDescribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SObjectDescribe.m; sourceTree = "<group>"; };
+		F49D8CEE11B6FD85008FE502 /* ZKSoapException_AppleScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKSoapException_AppleScript.h; sourceTree = "<group>"; };
+		F49D8CEF11B6FD85008FE502 /* ZKSoapException_AppleScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKSoapException_AppleScript.m; sourceTree = "<group>"; };
+		F49FE33111B6CD8F003F27F7 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		F49FE33211B6CD8F003F27F7 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		F4C0BF2611B719E200CBB9A8 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		F4C0BF4111B71B0100CBB9A8 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		F4C1442A11B74D55003AF176 /* zkParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkParser.h; path = ../sforce/zkParser.h; sourceTree = SOURCE_ROOT; };
+		F4C1442B11B74D55003AF176 /* zkParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkParser.m; path = ../sforce/zkParser.m; sourceTree = SOURCE_ROOT; };
+		F4C1446111B74E7C003AF176 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		F4C1448311B7557D003AF176 /* SforceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SforceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C1448411B7557D003AF176 /* SforceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SforceTests-Info.plist"; sourceTree = "<group>"; };
+		F4C144B711B756A6003AF176 /* ZKSObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKSObjectTest.h; sourceTree = "<group>"; };
+		F4C144B811B756A6003AF176 /* ZKSObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKSObjectTest.m; sourceTree = "<group>"; };
+		F4C1460B11B813E4003AF176 /* zkQueryResult_NSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkQueryResult_NSTableView.h; path = ../sforce/zkQueryResult_NSTableView.h; sourceTree = SOURCE_ROOT; };
+		F4C1460C11B813E4003AF176 /* zkQueryResult_NSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkQueryResult_NSTableView.m; path = ../sforce/zkQueryResult_NSTableView.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF8911AAFCAB00F8CD1E /* zkChildRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkChildRelationship.h; path = ../sforce/zkChildRelationship.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF8A11AAFCAB00F8CD1E /* zkChildRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkChildRelationship.m; path = ../sforce/zkChildRelationship.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF8B11AAFCAB00F8CD1E /* zkDescribeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkDescribeField.h; path = ../sforce/zkDescribeField.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF8C11AAFCAB00F8CD1E /* zkDescribeField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkDescribeField.m; path = ../sforce/zkDescribeField.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF8D11AAFCAB00F8CD1E /* zkDescribeGlobalSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkDescribeGlobalSObject.h; path = ../sforce/zkDescribeGlobalSObject.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF8E11AAFCAB00F8CD1E /* zkDescribeGlobalSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkDescribeGlobalSObject.m; path = ../sforce/zkDescribeGlobalSObject.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF8F11AAFCAB00F8CD1E /* zkDescribeSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkDescribeSObject.h; path = ../sforce/zkDescribeSObject.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF9011AAFCAB00F8CD1E /* zkDescribeSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkDescribeSObject.m; path = ../sforce/zkDescribeSObject.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF9111AAFCAB00F8CD1E /* zkEnvelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkEnvelope.h; path = ../sforce/zkEnvelope.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF9211AAFCAB00F8CD1E /* zkEnvelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkEnvelope.m; path = ../sforce/zkEnvelope.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF9311AAFCAB00F8CD1E /* zkLoginResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkLoginResult.h; path = ../sforce/zkLoginResult.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF9411AAFCAB00F8CD1E /* zkLoginResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkLoginResult.m; path = ../sforce/zkLoginResult.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF9511AAFCAB00F8CD1E /* ZKPartnerEnvelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZKPartnerEnvelope.h; path = ../sforce/ZKPartnerEnvelope.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF9611AAFCAB00F8CD1E /* ZKPartnerEnvelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZKPartnerEnvelope.m; path = ../sforce/ZKPartnerEnvelope.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF9711AAFCAB00F8CD1E /* ZKPicklistEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZKPicklistEntry.h; path = ../sforce/ZKPicklistEntry.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF9811AAFCAB00F8CD1E /* ZKPicklistEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZKPicklistEntry.m; path = ../sforce/ZKPicklistEntry.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF9911AAFCAB00F8CD1E /* zkQueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkQueryResult.h; path = ../sforce/zkQueryResult.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF9A11AAFCAB00F8CD1E /* zkQueryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkQueryResult.m; path = ../sforce/zkQueryResult.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF9B11AAFCAB00F8CD1E /* ZKRecordTypeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZKRecordTypeInfo.h; path = ../sforce/ZKRecordTypeInfo.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF9C11AAFCAB00F8CD1E /* ZKRecordTypeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZKRecordTypeInfo.m; path = ../sforce/ZKRecordTypeInfo.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF9D11AAFCAB00F8CD1E /* zkSaveResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkSaveResult.h; path = ../sforce/zkSaveResult.h; sourceTree = SOURCE_ROOT; };
+		F4C7AF9E11AAFCAB00F8CD1E /* zkSaveResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkSaveResult.m; path = ../sforce/zkSaveResult.m; sourceTree = SOURCE_ROOT; };
+		F4C7AF9F11AAFCAB00F8CD1E /* zkSforce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkSforce.h; path = ../sforce/zkSforce.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFA011AAFCAB00F8CD1E /* zkSforceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkSforceClient.h; path = ../sforce/zkSforceClient.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFA111AAFCAB00F8CD1E /* zkSforceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkSforceClient.m; path = ../sforce/zkSforceClient.m; sourceTree = SOURCE_ROOT; };
+		F4C7AFA211AAFCAB00F8CD1E /* zkSoapException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkSoapException.h; path = ../sforce/zkSoapException.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFA311AAFCAB00F8CD1E /* zkSoapException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkSoapException.m; path = ../sforce/zkSoapException.m; sourceTree = SOURCE_ROOT; };
+		F4C7AFA411AAFCAB00F8CD1E /* zkSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkSObject.h; path = ../sforce/zkSObject.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFA511AAFCAB00F8CD1E /* zkSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkSObject.m; path = ../sforce/zkSObject.m; sourceTree = SOURCE_ROOT; };
+		F4C7AFA611AAFCAB00F8CD1E /* zkUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkUserInfo.h; path = ../sforce/zkUserInfo.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFA711AAFCAB00F8CD1E /* zkUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkUserInfo.m; path = ../sforce/zkUserInfo.m; sourceTree = SOURCE_ROOT; };
+		F4C7AFA811AAFCAB00F8CD1E /* zkXmlDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkXmlDeserializer.h; path = ../sforce/zkXmlDeserializer.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFA911AAFCAB00F8CD1E /* zkXmlDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkXmlDeserializer.m; path = ../sforce/zkXmlDeserializer.m; sourceTree = SOURCE_ROOT; };
+		F4C7AFBC11AAFCC700F8CD1E /* zkBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zkBaseClient.h; path = ../sforce/zkBaseClient.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFBD11AAFCC700F8CD1E /* zkBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zkBaseClient.m; path = ../sforce/zkBaseClient.m; sourceTree = SOURCE_ROOT; };
+		F4C7AFC211AAFD3900F8CD1E /* credential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = credential.h; path = ../common/credential.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFC311AAFD3900F8CD1E /* credential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = credential.m; path = ../common/credential.m; sourceTree = SOURCE_ROOT; };
+		F4C7AFC411AAFD3900F8CD1E /* Login.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Login.nib; path = ../common/Login.nib; sourceTree = SOURCE_ROOT; };
+		F4C7AFC511AAFD3900F8CD1E /* ZKLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZKLoginController.h; path = ../common/ZKLoginController.h; sourceTree = SOURCE_ROOT; };
+		F4C7AFC611AAFD3900F8CD1E /* ZKLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZKLoginController.m; path = ../common/ZKLoginController.m; sourceTree = SOURCE_ROOT; };
+		F4C7AFCC11AAFD5A00F8CD1E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F4C7B1A911AB02E400F8CD1E /* Salesforce.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = Salesforce.sdef; sourceTree = "<group>"; };
+		F4C7B1AD11AB059E00F8CD1E /* UserSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSession.h; sourceTree = "<group>"; };
+		F4C7B1AE11AB059E00F8CD1E /* UserSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSession.m; sourceTree = "<group>"; };
+		F4C7B1CE11AB14C700F8CD1E /* LoginScriptCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginScriptCommand.h; sourceTree = "<group>"; };
+		F4C7B1CF11AB14C700F8CD1E /* LoginScriptCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginScriptCommand.m; sourceTree = "<group>"; };
+		F4C7B35F11AB3E2D00F8CD1E /* QueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryResult.h; sourceTree = "<group>"; };
+		F4C7B36011AB3E2D00F8CD1E /* QueryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryResult.m; sourceTree = "<group>"; };
+		F4C7B36211AB3E3B00F8CD1E /* AppleScriptItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleScriptItem.h; sourceTree = "<group>"; };
+		F4C7B36311AB3E3B00F8CD1E /* AppleScriptItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleScriptItem.m; sourceTree = "<group>"; };
+		F4C7B40D11ADA4E200F8CD1E /* SObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SObject.h; sourceTree = "<group>"; };
+		F4C7B40E11ADA4E200F8CD1E /* SObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SObject.m; sourceTree = "<group>"; };
+		F4FCB4E511B98435002557D9 /* FieldDescribe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldDescribe.h; sourceTree = "<group>"; };
+		F4FCB4E611B98435002557D9 /* FieldDescribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldDescribe.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				F4C7AFCD11AAFD5A00F8CD1E /* Security.framework in Frameworks */,
+				F4C0BF2711B719E200CBB9A8 /* Sparkle.framework in Frameworks */,
+				F4C1446211B74E7C003AF176 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C1448011B7557D003AF176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C1452711B75D45003AF176 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* SalesforceScriptingAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* SalesforceScriptingAppDelegate.m */,
+				F4C7B36211AB3E3B00F8CD1E /* AppleScriptItem.h */,
+				F4C7B36311AB3E3B00F8CD1E /* AppleScriptItem.m */,
+				F4C7B1AD11AB059E00F8CD1E /* UserSession.h */,
+				F4C7B1AE11AB059E00F8CD1E /* UserSession.m */,
+				F4C7B35F11AB3E2D00F8CD1E /* QueryResult.h */,
+				F4C7B36011AB3E2D00F8CD1E /* QueryResult.m */,
+				F4C7B1CE11AB14C700F8CD1E /* LoginScriptCommand.h */,
+				F4C7B1CF11AB14C700F8CD1E /* LoginScriptCommand.m */,
+				F4C7B40D11ADA4E200F8CD1E /* SObject.h */,
+				F4C7B40E11ADA4E200F8CD1E /* SObject.m */,
+				F41DFA1E11B5BFFF00567AB8 /* SaveResult.h */,
+				F41DFA1F11B5BFFF00567AB8 /* SaveResult.m */,
+				F49FE33111B6CD8F003F27F7 /* UserInfo.h */,
+				F49FE33211B6CD8F003F27F7 /* UserInfo.m */,
+				F49D8CEE11B6FD85008FE502 /* ZKSoapException_AppleScript.h */,
+				F49D8CEF11B6FD85008FE502 /* ZKSoapException_AppleScript.m */,
+				F42D337611B82C9C004A0B1D /* SObjectDescribe.h */,
+				F42D337711B82C9C004A0B1D /* SObjectDescribe.m */,
+				F4FCB4E511B98435002557D9 /* FieldDescribe.h */,
+				F4FCB4E611B98435002557D9 /* FieldDescribe.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0BF2611B719E200CBB9A8 /* Sparkle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				F4C7AFCC11AAFD5A00F8CD1E /* Security.framework */,
+				F4C1446111B74E7C003AF176 /* libxml2.dylib */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* SalesforceScripting.app */,
+				F4C1448311B7557D003AF176 /* SforceTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* SalesforceScripting */ = {
+			isa = PBXGroup;
+			children = (
+				F4C144B611B75681003AF176 /* sforce UnitTests */,
+				F41DF9E511B5B7D500567AB8 /* todo.txt */,
+				F4C7AFC111AAFD0C00F8CD1E /* common */,
+				F4C7AF8811AAFC7B00F8CD1E /* sforce */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F4C1448411B7557D003AF176 /* SforceTests-Info.plist */,
+			);
+			name = SalesforceScripting;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* SalesforceScripting_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0BF4111B71B0100CBB9A8 /* dsa_pub.pem */,
+				F4258F8011B5E7BA00C39DD9 /* Credits.html */,
+				F4C7AFC411AAFD3900F8CD1E /* Login.nib */,
+				8D1107310486CEB800E47090 /* SalesforceScripting-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				F4C7B1A911AB02E400F8CD1E /* Salesforce.sdef */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C144B611B75681003AF176 /* sforce UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4C144B711B756A6003AF176 /* ZKSObjectTest.h */,
+				F4C144B811B756A6003AF176 /* ZKSObjectTest.m */,
+			);
+			name = "sforce UnitTests";
+			sourceTree = "<group>";
+		};
+		F4C7AF8811AAFC7B00F8CD1E /* sforce */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1442A11B74D55003AF176 /* zkParser.h */,
+				F4C1442B11B74D55003AF176 /* zkParser.m */,
+				F4C7AFBC11AAFCC700F8CD1E /* zkBaseClient.h */,
+				F4C7AFBD11AAFCC700F8CD1E /* zkBaseClient.m */,
+				F4C7AF8911AAFCAB00F8CD1E /* zkChildRelationship.h */,
+				F4C7AF8A11AAFCAB00F8CD1E /* zkChildRelationship.m */,
+				F4C7AF8B11AAFCAB00F8CD1E /* zkDescribeField.h */,
+				F4C7AF8C11AAFCAB00F8CD1E /* zkDescribeField.m */,
+				F4C7AF8D11AAFCAB00F8CD1E /* zkDescribeGlobalSObject.h */,
+				F4C7AF8E11AAFCAB00F8CD1E /* zkDescribeGlobalSObject.m */,
+				F4C7AF8F11AAFCAB00F8CD1E /* zkDescribeSObject.h */,
+				F4C7AF9011AAFCAB00F8CD1E /* zkDescribeSObject.m */,
+				F4C7AF9111AAFCAB00F8CD1E /* zkEnvelope.h */,
+				F4C7AF9211AAFCAB00F8CD1E /* zkEnvelope.m */,
+				F4C7AF9311AAFCAB00F8CD1E /* zkLoginResult.h */,
+				F4C7AF9411AAFCAB00F8CD1E /* zkLoginResult.m */,
+				F4C7AF9511AAFCAB00F8CD1E /* ZKPartnerEnvelope.h */,
+				F4C7AF9611AAFCAB00F8CD1E /* ZKPartnerEnvelope.m */,
+				F4C7AF9711AAFCAB00F8CD1E /* ZKPicklistEntry.h */,
+				F4C7AF9811AAFCAB00F8CD1E /* ZKPicklistEntry.m */,
+				F4C7AF9911AAFCAB00F8CD1E /* zkQueryResult.h */,
+				F4C7AF9A11AAFCAB00F8CD1E /* zkQueryResult.m */,
+				F4C1460B11B813E4003AF176 /* zkQueryResult_NSTableView.h */,
+				F4C1460C11B813E4003AF176 /* zkQueryResult_NSTableView.m */,
+				F4C7AF9B11AAFCAB00F8CD1E /* ZKRecordTypeInfo.h */,
+				F4C7AF9C11AAFCAB00F8CD1E /* ZKRecordTypeInfo.m */,
+				F4C7AF9D11AAFCAB00F8CD1E /* zkSaveResult.h */,
+				F4C7AF9E11AAFCAB00F8CD1E /* zkSaveResult.m */,
+				F4C7AF9F11AAFCAB00F8CD1E /* zkSforce.h */,
+				F4C7AFA011AAFCAB00F8CD1E /* zkSforceClient.h */,
+				F4C7AFA111AAFCAB00F8CD1E /* zkSforceClient.m */,
+				F4C7AFA211AAFCAB00F8CD1E /* zkSoapException.h */,
+				F4C7AFA311AAFCAB00F8CD1E /* zkSoapException.m */,
+				F4C7AFA411AAFCAB00F8CD1E /* zkSObject.h */,
+				F4C7AFA511AAFCAB00F8CD1E /* zkSObject.m */,
+				F4C7AFA611AAFCAB00F8CD1E /* zkUserInfo.h */,
+				F4C7AFA711AAFCAB00F8CD1E /* zkUserInfo.m */,
+				F4C7AFA811AAFCAB00F8CD1E /* zkXmlDeserializer.h */,
+				F4C7AFA911AAFCAB00F8CD1E /* zkXmlDeserializer.m */,
+			);
+			name = sforce;
+			sourceTree = "<group>";
+		};
+		F4C7AFC111AAFD0C00F8CD1E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F4C7AFC211AAFD3900F8CD1E /* credential.h */,
+				F4C7AFC311AAFD3900F8CD1E /* credential.m */,
+				F4C7AFC511AAFD3900F8CD1E /* ZKLoginController.h */,
+				F4C7AFC611AAFD3900F8CD1E /* ZKLoginController.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* SalesforceScripting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SalesforceScripting" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				F4258FA711B5E86A00C39DD9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalesforceScripting;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SalesforceScripting;
+			productReference = 8D1107320486CEB800E47090 /* SalesforceScripting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4C1448211B7557D003AF176 /* SforceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C1448811B7557E003AF176 /* Build configuration list for PBXNativeTarget "SforceTests" */;
+			buildPhases = (
+				F4C1447E11B7557D003AF176 /* Resources */,
+				F4C1447F11B7557D003AF176 /* Sources */,
+				F4C1448011B7557D003AF176 /* Frameworks */,
+				F4C1448111B7557D003AF176 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SforceTests;
+			productName = SforceTests;
+			productReference = F4C1448311B7557D003AF176 /* SforceTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SalesforceScripting" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SalesforceScripting */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* SalesforceScripting */,
+				F4C1448211B7557D003AF176 /* SforceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				F4C7AFC811AAFD3900F8CD1E /* Login.nib in Resources */,
+				F4C7B1AA11AB02E400F8CD1E /* Salesforce.sdef in Resources */,
+				F41DF9E611B5B7D500567AB8 /* todo.txt in Resources */,
+				F4258F8111B5E7BA00C39DD9 /* Credits.html in Resources */,
+				F4C0BF4211B71B0100CBB9A8 /* dsa_pub.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C1447E11B7557D003AF176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F4C1448111B7557D003AF176 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* SalesforceScriptingAppDelegate.m in Sources */,
+				F4C7AFAA11AAFCAB00F8CD1E /* zkChildRelationship.m in Sources */,
+				F4C7AFAB11AAFCAB00F8CD1E /* zkDescribeField.m in Sources */,
+				F4C7AFAC11AAFCAB00F8CD1E /* zkDescribeGlobalSObject.m in Sources */,
+				F4C7AFAD11AAFCAB00F8CD1E /* zkDescribeSObject.m in Sources */,
+				F4C7AFAE11AAFCAB00F8CD1E /* zkEnvelope.m in Sources */,
+				F4C7AFAF11AAFCAB00F8CD1E /* zkLoginResult.m in Sources */,
+				F4C7AFB011AAFCAB00F8CD1E /* ZKPartnerEnvelope.m in Sources */,
+				F4C7AFB111AAFCAB00F8CD1E /* ZKPicklistEntry.m in Sources */,
+				F4C7AFB211AAFCAB00F8CD1E /* zkQueryResult.m in Sources */,
+				F4C7AFB311AAFCAB00F8CD1E /* ZKRecordTypeInfo.m in Sources */,
+				F4C7AFB411AAFCAB00F8CD1E /* zkSaveResult.m in Sources */,
+				F4C7AFB511AAFCAB00F8CD1E /* zkSforceClient.m in Sources */,
+				F4C7AFB611AAFCAB00F8CD1E /* zkSoapException.m in Sources */,
+				F4C7AFB711AAFCAB00F8CD1E /* zkSObject.m in Sources */,
+				F4C7AFB811AAFCAB00F8CD1E /* zkUserInfo.m in Sources */,
+				F4C7AFB911AAFCAB00F8CD1E /* zkXmlDeserializer.m in Sources */,
+				F4C7AFBE11AAFCC700F8CD1E /* zkBaseClient.m in Sources */,
+				F4C7AFC711AAFD3900F8CD1E /* credential.m in Sources */,
+				F4C7AFC911AAFD3900F8CD1E /* ZKLoginController.m in Sources */,
+				F4C7B1AF11AB059E00F8CD1E /* UserSession.m in Sources */,
+				F4C7B1D011AB14C700F8CD1E /* LoginScriptCommand.m in Sources */,
+				F4C7B36111AB3E2D00F8CD1E /* QueryResult.m in Sources */,
+				F4C7B36411AB3E3B00F8CD1E /* AppleScriptItem.m in Sources */,
+				F4C7B40F11ADA4E200F8CD1E /* SObject.m in Sources */,
+				F41DFA2011B5BFFF00567AB8 /* SaveResult.m in Sources */,
+				F49FE33311B6CD8F003F27F7 /* UserInfo.m in Sources */,
+				F49D8CF011B6FD85008FE502 /* ZKSoapException_AppleScript.m in Sources */,
+				F4C1442C11B74D55003AF176 /* zkParser.m in Sources */,
+				F4C1460D11B813E4003AF176 /* zkQueryResult_NSTableView.m in Sources */,
+				F42D337811B82C9C004A0B1D /* SObjectDescribe.m in Sources */,
+				F4FCB4E711B98435002557D9 /* FieldDescribe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C1447F11B7557D003AF176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C144F511B75CDD003AF176 /* zkParser.m in Sources */,
+				F4C144F611B75CDD003AF176 /* zkBaseClient.m in Sources */,
+				F4C144F711B75CDD003AF176 /* zkChildRelationship.m in Sources */,
+				F4C144F811B75CDD003AF176 /* zkDescribeField.m in Sources */,
+				F4C144F911B75CDD003AF176 /* zkDescribeGlobalSObject.m in Sources */,
+				F4C144FA11B75CDD003AF176 /* zkDescribeSObject.m in Sources */,
+				F4C144FB11B75CDD003AF176 /* zkEnvelope.m in Sources */,
+				F4C144FC11B75CDD003AF176 /* zkLoginResult.m in Sources */,
+				F4C144FD11B75CDD003AF176 /* ZKPartnerEnvelope.m in Sources */,
+				F4C144FE11B75CDD003AF176 /* ZKPicklistEntry.m in Sources */,
+				F4C144FF11B75CDD003AF176 /* zkQueryResult.m in Sources */,
+				F4C1450011B75CDD003AF176 /* ZKRecordTypeInfo.m in Sources */,
+				F4C1450111B75CDD003AF176 /* zkSaveResult.m in Sources */,
+				F4C1450211B75CDD003AF176 /* zkSforceClient.m in Sources */,
+				F4C1450311B75CDD003AF176 /* zkSoapException.m in Sources */,
+				F4C1450411B75CDD003AF176 /* zkSObject.m in Sources */,
+				F4C1450511B75CDD003AF176 /* zkUserInfo.m in Sources */,
+				F4C1450611B75CDD003AF176 /* zkXmlDeserializer.m in Sources */,
+				F4C1452E11B75D87003AF176 /* ZKSObjectTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SalesforceScripting_Prefix.pch;
+				INFOPLIST_FILE = "SalesforceScripting-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = SalesforceScripting;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SalesforceScripting_Prefix.pch;
+				INFOPLIST_FILE = "SalesforceScripting-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = SalesforceScripting;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		F4C1448611B7557E003AF176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "SforceTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SforceTests;
+				TEST_HOST = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F4C1448711B7557E003AF176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "SforceTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SforceTests;
+				TEST_HOST = "";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SalesforceScripting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SalesforceScripting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C1448811B7557E003AF176 /* Build configuration list for PBXNativeTarget "SforceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C1448611B7557E003AF176 /* Debug */,
+				F4C1448711B7557E003AF176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
